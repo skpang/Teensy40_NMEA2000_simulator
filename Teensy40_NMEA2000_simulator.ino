@@ -278,7 +278,7 @@ void SendN2kCOGSOG(){
 #define TempUpdatePeriod 100
 void SendN2kTemperature() {
      
-  static unsigned long Updated=millis()+60;
+  static unsigned long Updated=millis()+70;
   tN2kMsg N2kMsg;
 
   if ( Updated+TempUpdatePeriod<millis() ) {
